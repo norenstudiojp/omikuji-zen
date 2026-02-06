@@ -23,6 +23,24 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
+# --- SIDEBAR: PRIVACY POLICY ---
+with st.sidebar:
+    st.title("About Noren Labs")
+    if st.checkbox("Privacy Policy"):
+        st.markdown("""
+        ### Privacy Policy
+        **1. Data Collection**
+        We use Google Generative AI (Gemini) to generate wisdom. No personal identifiers are stored on our servers.
+        
+        **2. Advertisements**
+        We use Google AdMob/AdSense. These third-party vendors use cookies to serve ads based on your prior visits.
+        
+        **3. Analytics**
+        We may use basic analytics to improve user experience.
+        
+        *Noren Labs - Zen Omikuji*
+        """)
+
 # --- LOGIC ---
 def get_zen_wisdom(fortune_level, api_key):
     try:
