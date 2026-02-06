@@ -87,7 +87,17 @@ if st.button("Draw Fortune"):
     share_text = f"Noren Labs - Zen Omikuji\nFortune: {level}\nWisdom: {wisdom}\n#ZenOmikuji #NorenLabs"
     st.text_area("Copy to share your Zen moment:", value=share_text, height=100)
 
-# --- FOOTER / AD ---
-st.markdown('<div class="ad-placeholder">ADVERTISEMENT<br>(Google AdMob Placeholder)</div>', unsafe_allow_html=True)
-# Example AdMob Script (Uncomment and replace with real code when ready)
-# st.components.v1.html("""<script async src="..."></script>""", height=100)
+# --- AD REPLACEMENT ---
+import streamlit.components.v1 as components
+
+# AdMob / AdSense HTML Code
+# 注: 審査に通るまではプレースホルダーが表示されます
+ad_code = """
+<div style="text-align:center; margin-top:20px;">
+    <p style="color:#CCC; font-size:10px;">ADVERTISEMENT</p>
+    <div style="width:100%; height:90px; background:#EEE; display:flex; align-items:center; justify-content:center;">
+        <span style="color:#999;">Ad Space</span>
+    </div>
+</div>
+"""
+components.html(ad_code, height=150)
