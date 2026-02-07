@@ -5,6 +5,11 @@ import streamlit.components.v1 as components
 
 # --- CONFIGURATION & STYLING ---
 st.set_page_config(page_title="Noren Labs - Zen Omikuji", page_icon="⛩️", layout="centered")
+# 1. AdSenseの確認画面から <meta name="google-adsense-account" content="ca-pub-XXXXXXXX"> をコピー
+adsense_meta = '<meta name="google-adsense-account" content="ca-pub-XXXXXXXXXXXXXXXX">'
+
+# 2. これをHTMLとして埋め込む（これでもダメな場合は、後述の独自ドメインを検討）
+components.html(adsense_meta, height=0)
 
 # 【重要】Google AdSense 審査用コードの埋め込み
 # あなたのAdSense管理画面で発行された「ca-pub-XXXXXXXXXXXXXXXX」をここに反映させてください
