@@ -8,7 +8,7 @@ st.set_page_config(page_title="Noren Labs - Zen Omikuji", page_icon="⛩️", la
 
 # 【重要】Google AdSense 審査用コードの埋め込み
 # あなたのAdSense管理画面で発行された「ca-pub-XXXXXXXXXXXXXXXX」をここに反映させてください
-adsense_id = "ca-pub-XXXXXXXXXXXXXXXX" # 後で書き換えてください
+adsense_id = "ca-pub-8982760985669430" # 後で書き換えてください
 adsense_script = f"""
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={adsense_id}"
      crossorigin="anonymous"></script>
